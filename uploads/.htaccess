@@ -1,0 +1,8 @@
+# ป้องกันการรันไฟล์ PHP ในโฟลเดอร์นี้
+<FilesMatch "\.(php|php\.?|phtml|phar|phtml|phtm|pgif|pjpg|pjpeg)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# ปิดการแสดงรายการไฟล์ (Directory Listing)
+Options -Indexes
